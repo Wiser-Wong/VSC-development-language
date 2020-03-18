@@ -1,0 +1,69 @@
+一.变量和常量
+1.变量
+dart是强类型，第一次赋值是什么类型，以后不可以更改类型，js是可以的，使用var什么变量
+如果真想改变类型可以添加dynamic关键字
+2.常量
+设置常量使用final或const关键字修饰。
+final和const区别：const变量是编译时常量，final变量在第一次使用时被初始化（const变量是隐式的final）。
+使用场景：实例变量可以是final、const，如果是类级别可以使用static const
+二.内置类型
+1.Number(数值型)
+a.数值型分整型int和浮点型double，可以用num、int、double声明。
+num声明的变量初始是int型的，之后可以被改成double型，但是int声明的变量，之后不可以被改成double型
+b.+、-、*、/、~/、% 加减乘除 取整 取余，abs(),round(),floor(),ceil(),toInt(),toDouble 绝对值 四舍五入 取比当前数小的最大整数 取比当前数大的整数 转int型 转double型
+2.String(字符串)
+单引号或双引号创建字符串，三个引号或双引号创建多行字符串
+3.Boolean(布尔型)
+4.List(列表)
+创建list不是通过{}大括号而是[]中括号，也可通过构造new List()，创建不可变的集合const[...]
+5.Map(键值对)
+创建map,Map m = {"key":"value","key1":"value1"},创建不可变的map,Map m = const{"key":"value","key1":"value1"}
+创建map构造方式，Map m = new Map(); m['key'] = 'value'
+移除map中元素，m.remove('key'); m.clear();
+6.Runes(符号字符)
+7.Symbols(标识符)
+三.运算符
+1.三目运算符
+a > 10 ? a : 0
+2.~/ 除法，返回整数结果（取商） 12 ~/ 7 = 1
+3.级联操作符
+String s = (new StringBuffer()..write("a")..write("b")..write("c")).toString();
+4.as、is、is!
+as:判断属于某种类型
+is:如果对象具有指定的类型 则true
+is!:如果对象具有指定的类型 则false
+四.异常捕获
+throw Exception("");
+try{
+    //捕获特定类型的异常
+  } on FormatException catch(e){
+    //捕获特定类型异常，但不需要这个对象
+  } on Exception{
+    //捕获所有异常
+  } catch(e){
+    //....
+  } finally{
+    //....
+  }
+五.函数
+1.可先参数：void a({int age,String name}){} age和name可以不传
+2、必传参数：void a({@required int age,@required String name}){}
+3.可选的位置参数：void a({int age,String name,[String sex]}){} 用【】括起来的就是可选位置参数
+4.默认参数：void a({int age = 22,String name = "小明"}){}
+5.函数作为参数传递：
+void printContent(String content){
+    print(content);
+}
+var users = ["小明","小王","小张"];
+users.forEach(printContent);
+6.函数作为变量：函数直接赋值给变量，并且把变量作为函数调用
+var say = (name){
+    print(name);
+};
+say("过年了");
+六.异步编程
+dart是单线程
+1.Future
+
+
+

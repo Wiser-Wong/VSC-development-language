@@ -1,0 +1,24 @@
+1.返回
+let返回最后一行
+with返回最后一行
+run返回最后一行
+apply返回对象本身
+2.使用
+T.let{
+    //dosomething
+    直接返回值 不使用return
+}
+with(T){
+    //dosomething
+    直接返回值 不使用return
+}
+T.run{
+    //dosomething
+    直接返回值 不使用return
+}
+T.apply{
+    //dosomething
+    默认返回了T对象
+}
+val result = T.let{ it }.run{ this }.apply{} 调用不分先后，with方法不是可扩展的所以不能在后面用.with(T){}
+但是可以val result = with(T){ this }.let{ it }.apply{}.run{ this }
