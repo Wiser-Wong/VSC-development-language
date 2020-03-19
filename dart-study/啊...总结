@@ -64,6 +64,48 @@ say("过年了");
 六.异步编程
 dart是单线程
 1.Future
+2.async和await
+同步：method() async{
+  await Future.delayed()
+  await Future.delayed()
+}
+七.继承、接口和混合
+1.继承：(expands) 单继承 重写父类方法 没有公有和私有的修饰符
+2.接口：没有Java中接口关键字interface
+a.类可以当做接口使用，类中的方法就是接口的方法
+class A{
+  void a(){}
+}
+class B implements A{
+  @override
+  void a(){}
+}
+b.抽象类可以当做接口使用
+abstract class A{
+  void a();
+}
+class B implements A{
+  @override
+  void a(){}
+}
+3.混合：mixins 关键字with
+理解：直白一点就是一个可以把自己的方法提供给其他类使用，但却不需要成为其他类的父类的类，是以非继承的方式来复用类中的代码
+class A{
+  void a(){}
+}
+class B{
+  void b(){}
+}
+class C{
+  void c(){}
+}
+//此时D类继承C类，并没有继承A和B类但是可以复用A类中的a方法和B类中的b方法
+class D expands C with A,B{
+  @override
+  void a(){}
+  @override
+  void b(){}
+}
 
 
 
