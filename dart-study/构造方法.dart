@@ -4,12 +4,18 @@ main(List<String> args) {
   var person2 = Person.withName("Wiser");
 
   var person3 = Person.withAge(20);
+
+  person1.input();
+
+  person2.input();
+
+  person3.input();
 }
 
 //构造方法不能被重载 如何实现多个构造方法呢-->需要使用命名的构造方法（类.方法——>class.method）
 class Person{
-  String name;
-  int _age;
+  String? name;
+  int _age = 0;
 
   // 默认构造方法
   // Person(){
@@ -29,7 +35,9 @@ class Person{
 
   Person.withAge(this._age);
 
-  info(name,_age) => print("name = $name , _age = $_age");
+  info(String name,int _age) => print("name = $name , _age = $_age");
+
+  input() => print("name = $name , _age = $_age");
 }
 
 class Person1{
@@ -46,4 +54,6 @@ class Person1{
   Person1(this.name,this._age,this.gender);//可以用语法堂给final赋初始值
 
   info(name,_age) => print("name = $name , _age = $_age");
+
+  input() => print("name = $name , _age = $_age , gender = $gender");
 }

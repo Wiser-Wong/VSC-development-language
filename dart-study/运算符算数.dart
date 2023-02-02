@@ -6,8 +6,8 @@ main(List<String> args) {
   print(a - b);
   print(a * b);
   print(a / b);
-  print(a ~/ b);
-  print(a % b);
+  print(a ~/ b);// 取整
+  print(a % b); // 取余
 
   print(a++);//先使用a的值，然后将a + 
   print(++a);//先运算a + ，然后使用a的值

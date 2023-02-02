@@ -21,10 +21,10 @@ main(List<String> args) {
 
 //子类
 class Man extends Person{
-    String hobby;
+    String? hobby;
 
     @override
-    bool get isAdult => age > 17;
+    bool get isAdult => (age ?? 0) > 17;
 
     @override
     info(){
@@ -38,10 +38,10 @@ class Man extends Person{
 
 //父类
 class Person{
-  String name;
-  int age;
+  String? name;
+  int? age;
 
-  bool get isAdult => age > 18;
+  bool get isAdult => (age ?? 0) > 18;
 
   info(){
     print("Person 方法");

@@ -26,7 +26,7 @@ List listTimes(List list,String times(str)){
 
 //方法当参数
 List listTimes1(List list){
-  //匿名内部类
+  //匿名内部
   var times = (str){return str * 2;};
   for(var i = 0; i < list.length; i++){
       list[i] = times(list[i]);

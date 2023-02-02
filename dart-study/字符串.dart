@@ -4,11 +4,15 @@ main(List<String> args) {
   String c = '''hello 
             dart ''';
   String d = """ hello dart """;
+  var e = r'双十一真给力 \n'; // 增加r 字符串不会被转义
+  var f = '双十一真给力 \n'; // 增加r 字符串不会被转义
 
   print(a);
   print(b);
   print(c);
   print(d);
+  print(e);
+  print(f);
 
   print(a.substring(0,2));
   print(a.startsWith("h"));

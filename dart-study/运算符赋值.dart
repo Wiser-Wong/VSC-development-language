@@ -3,7 +3,7 @@ main(List<String> args) {
   // += , -= , *= , /= , %= , ~/=
 
   int a = 1;
-  int b;
+  int? b;
   int c = 2;
   double d = 21;
   int e = 21;

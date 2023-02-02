@@ -5,8 +5,8 @@ main(List<String> args) {
 }
 
 class Person{
-  String name;
-  int age;
+  String name = "";
+  int age = 0;
 
   // info(){
   //   print("name = $name ,age = $age");

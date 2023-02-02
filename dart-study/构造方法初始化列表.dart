@@ -7,7 +7,7 @@ main(List<String> args) {
 }
 
 class Person{
-  String name;
+  String? name;
   int age;
   final String gender;
 

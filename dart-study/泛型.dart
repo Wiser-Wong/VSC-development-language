@@ -1,5 +1,5 @@
 main(List<String> args) {
-  var list = new List<int>();
+  var list = [];
   list.add(1);
 
   var test = Test<String>();
@@ -20,7 +20,7 @@ main(List<String> args) {
 
 //类泛型
 class Test<A>{
-    A element;
+    A? element;
 
     void putData(A element){
       this.element = element;

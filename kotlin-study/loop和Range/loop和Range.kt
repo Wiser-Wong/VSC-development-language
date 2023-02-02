@@ -1,5 +1,5 @@
 fun main(args:Array<String>){
-    var nums = 1..10 //[1,100]闭区间
+    var nums = 1..100 //[1,100]闭区间
     var result = 0
     for(num in nums){
         result = result + num

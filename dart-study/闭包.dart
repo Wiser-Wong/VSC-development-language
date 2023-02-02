@@ -1,7 +1,7 @@
 main(List<String> args) {
   //方法体中的局部变量访问只能通过闭包的方式访问
 
-  var func = a();
+  var func = c();
   func();//count = 0;
   func();//count = 1;
   func();//count = 2;

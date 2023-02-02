@@ -1,7 +1,7 @@
 main(List<String> args) {
     //条件成员访问?.
     // as,is,is!,..级联
-    Person person;
+    Person? person;
     person?.info();//person 是空的 ?.判断是空的时候不执行，不是空的时候执行方法
 
     var person1;
@@ -9,7 +9,7 @@ main(List<String> args) {
     person1 = Person();
     //此时不知道person1是字符串类型还是Person类对象所以无法调用Person类中的变量及方法 通过as来判断
     (person1 as Person).info();
-    
+
 
     var person2;
     person2 = "Dart";
@@ -26,8 +26,8 @@ main(List<String> args) {
 }
 
 class Person{
-  String name;
-  int age;
+  String? name;
+  int? age = 0;
 
   info(){
     print("name = $name ,age = $age");

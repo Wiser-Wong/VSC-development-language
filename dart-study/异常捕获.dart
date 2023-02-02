@@ -18,7 +18,7 @@ main(List<String> args) {
     var result = 12 ~/ 0;
     print(result);
   }on IntegerDivisionByZeroException{
-    print("不能除以0}");
+    print("不能除以0");
   }
 
   try{

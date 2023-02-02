@@ -28,7 +28,7 @@ class B{
 // class C extends Test{ 不能继承Test类只能直接继承Object类
 class C{
 
-  String name;
+  String? name;
 
   // C(){}//不能添加构造方法
   // C.withName(this.name){}//同样不能添加构造方法
@@ -46,7 +46,7 @@ class Test{
 
 }
 
-//多继承写法 使用with连接多个类继承
+//多继承写法 使用with连接多个类继承 谁先混合如果混合类中存在相同方法，则会调用先混合类的方法 比如with B,C 先混合B，执行a方法的时候会调用B类的a方法，不会执行C类的a方法
 class D extends A with B,C{
 
 }
@@ -72,8 +72,8 @@ class G implements E{
 }
 
 class H{
-  String name;
-  int age;
+  String? name;
+  int? age;
 }
 
 class Test1 = H with F;//此处也是Mixin多继承方式，但是如果{}里要处理逻辑不可以这么写

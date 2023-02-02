@@ -26,19 +26,19 @@ main(List<String> args) {
 //   print("name = $name , age = $age , gender = $gender");
 // }
 
-printInfo2({int age,String gender}){
+printInfo2({int age = 0,String gender = ""}){
   print("age = $age , gender = $gender");
 }
 
-printInfo(String name,{int age,String gender}){
+printInfo(String name,{int age = 0,String gender = ""}){
   print("name = $name , age = $age , gender = $gender");
 }
 
-printInfo1(String name,[int age,String gender]){
+printInfo1(String name,[int age = 0,String gender = ""]){
   print("name = $name , age = $age , gender = $gender");
 }
 
 //默认参数值 age = 20是默认值
-printInfo3({int age = 20,String gender}){
+printInfo3({int age = 20,String gender = ""}){
   print("age = $age , gender = $gender");
 }

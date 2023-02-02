@@ -7,7 +7,9 @@ class Woman extends Person{
 
   final String gender;
 
-  //无参的子类的构造写法
+  String? name;
+
+  //无参的子类的构造写法 final写法
   Woman(this.gender) : super(''){
     
   }
@@ -18,8 +20,8 @@ class Woman extends Person{
 }
 
 class Person{
-  String name;
-  int age;
+  String? name;
+  int? age;
 
   // //无参构造函数 优先执行
   // Person(){

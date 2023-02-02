@@ -4,8 +4,8 @@
 //方法不能被重载
 //下划线命名是私有的（无论类，方法，变量等）都是外部不可访问的
 class _Person{
-  String name;
-    int age;
+    String? name;
+    int? age;
     final String gender = "男";
 
     void info(){

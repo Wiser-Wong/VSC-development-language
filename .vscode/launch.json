@@ -5,11 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hello",
+            "request": "launch",
+            "mainClass": "Hello"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MThread",
+            "request": "launch",
+            "mainClass": "MThread"
+        },
+        {
             "name": "Dart",
             "program": "bin/main.dart",
             "request": "launch",
             "type": "dart",
-            "args": ["--enable-software-rendering"]
+            "args": [
+                "--enable-software-rendering"
+            ]
         }
     ]
 }

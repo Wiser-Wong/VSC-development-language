@@ -12,7 +12,7 @@ main(List<String> args) {
 }
 
 class Rectangle{
-  num width,height;
+  num width = 0,height = 0;
 
   num area() => width * height;
 

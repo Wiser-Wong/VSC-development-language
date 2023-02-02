@@ -6,7 +6,7 @@ main(List<String> args) {
   dynamic b = 20;
   b = "hello dart";
 
-  var list = new List<dynamic>();
+  var list = [];
   list.add(1);
   list.add("dart");
   list.add(true);

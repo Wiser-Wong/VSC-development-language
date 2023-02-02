@@ -4,8 +4,8 @@
 //方法不能被重载
 
 class Person{
-    String name;
-    int age;
+    String? name;
+    int? age;
     final String gender = "男";
 
     void info(){
